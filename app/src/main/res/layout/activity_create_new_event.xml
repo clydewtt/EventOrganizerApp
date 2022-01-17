@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="36dp"
+    android:orientation="vertical"
+    tools:context=".CreateNewEventActivity"
+    tools:ignore="HardcodedText,LabelFor,TextFields,Autofill">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="81dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Create New Event"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Event Title"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Overline"/>
+
+            <EditText
+                android:id="@+id/event_title_edit_text"
+                android:background="@drawable/background_edit_text"
+                android:layout_marginBottom="16dp"
+                android:paddingHorizontal="12sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_regular"
+                android:textCursorDrawable="@drawable/edit_text_black_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Date"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        style="@style/TextAppearance.MaterialComponents.Overline"/>
+
+                    <EditText
+                        android:id="@+id/date_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:clickable="true"
+                        android:inputType="none"
+                        android:paddingVertical="4dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="20sp"
+                        android:background="@drawable/background_edit_text" />
+                </LinearLayout>
+
+                <!-- Space in-between the two linear layouts -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Starts at"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        style="@style/TextAppearance.MaterialComponents.Overline"/>
+                    <EditText
+                        android:id="@+id/time_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="4dp"
+                        android:cursorVisible="false"
+                        android:clickable="true"
+                        android:inputType="none"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="20sp"
+                        android:background="@drawable/background_edit_text"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Event Location"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Overline"/>
+
+            <EditText
+                android:id="@+id/event_location_edit_text"
+                android:background="@drawable/background_edit_text"
+                android:layout_marginBottom="16dp"
+                android:paddingHorizontal="12sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:clickable="true"
+                android:inputType="none"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Event Description"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Overline"/>
+
+            <EditText
+                android:id="@+id/event_description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="start"
+                android:maxLines="7"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/inter_regular"
+                android:textCursorDrawable="@drawable/edit_text_black_cursor"
+                android:paddingHorizontal="12sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/background_edit_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Participants (From Friends List)"
+                android:layout_marginBottom="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Overline"/>
+
+            <ListView
+                android:id="@+id/participants_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done_button_create_new_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="Done"
+        android:textColor="@color/black"
+        android:backgroundTint="#C4C4C4"
+        app:cornerRadius="8dp"/>
+
+
+
+</RelativeLayout>

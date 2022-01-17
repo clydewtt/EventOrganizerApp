@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_color"
+    android:paddingHorizontal="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    tools:ignore="HardcodedText,LabelFor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Signup"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/background_edit_text_login_and_signup"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="Full Name"/>
+
+        <EditText
+            android:id="@+id/full_name_signup_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/edit_text_white_cursor"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/white"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/background_edit_text_login_and_signup"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="Email Address"/>
+
+        <EditText
+            android:id="@+id/email_address_signup_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/edit_text_white_cursor"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/white"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/background_edit_text_login_and_signup"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="Password"/>
+
+        <EditText
+            android:id="@+id/password_signup_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/edit_text_white_cursor"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/white"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="COVID-19 Status"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/positive_status_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_accent"
+                android:layout_marginEnd="8dp"
+                android:text="I am currently positive for COVID-19"
+                android:fontFamily="@font/inter_medium"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/color_accent"
+        android:text="NEXT"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/log_in_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"
+        android:text="Already have an account? Login here"/>
+
+</LinearLayout>

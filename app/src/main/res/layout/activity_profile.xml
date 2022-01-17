@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    tools:ignore="HardcodedText,LabelFor">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/sample_person_drawin"
+        android:scaleType="centerCrop"
+        android:background="@color/dark_gray"/>
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current COVID Status"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/covid_status_text_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Negative"
+        android:textSize="18sp"
+        android:textColor="@color/color_accent"
+        android:fontFamily="@font/inter_medium"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update_information_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Information"
+        android:textColor="@color/white"
+        android:backgroundTint="#606060"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/holo_red_dark"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_color"
+    android:clickable="true"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    tools:ignore="HardcodedText">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_view_event_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/event_image_list_item"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:src="@mipmap/sample_event_image"
+                    android:scaleType="centerCrop"
+                    android:background="@color/dark_gray"
+                    tools:ignore="ContentDescription" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/card_view_event_image"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_and_time_event_list_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_dark_accent"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="12sp"
+                    style="@style/TextAppearance.MaterialComponents.Overline"
+                    android:text="July 4, 8:30 AM"/>
+
+                <TextView
+                    android:id="@+id/event_title_list_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/off_black"
+                    android:fontFamily="@font/inter_medium"
+                    android:letterSpacing="0.02"
+                    android:text="Family Gathering"/>
+
+                <TextView
+                    android:id="@+id/location_list_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Silicon Valley, California"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

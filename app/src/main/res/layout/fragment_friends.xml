@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    android:paddingTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context=".FriendsFragment"
+    tools:ignore="HardcodedText,LabelFor">
+
+    <SearchView
+        android:id="@+id/search_friends_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:queryHint="Enter your friend's name"
+        android:background="@drawable/background_edit_text"
+        android:layout_marginBottom="20dp"
+        android:iconifiedByDefault="false"/>
+
+    <LinearLayout
+        android:id="@+id/main_content_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="You"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/current_user_card_view"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="24dp"
+        android:clipToPadding="false"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/current_user_card_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/sample_person_drawin"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="20dp"
+                android:background="@color/dark_gray"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/current_user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="18sp"
+                android:textColor="@color/off_black"
+                android:fontFamily="@font/inter_medium"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Friends"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/text_message_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Loading..."
+        android:visibility="visible"
+        android:textSize="36sp"
+        android:textColor="@color/color_dark_accent"
+        android:fontFamily="@font/inter_medium"/>
+
+    <ListView
+        android:id="@+id/friends_list_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:visibility="gone"
+        android:scrollbars="none"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_results_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:visibility="gone"
+        android:text="Search Results"
+        android:textSize="32sp"
+        android:textColor="@color/off_black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <ListView
+        android:id="@+id/search_results_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:divider="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailsActivity"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/event_details_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:src="@mipmap/sample_event_image"
+            android:scaleType="centerCrop"
+            android:background="#C4C4C4"
+            android:contentDescription="Event image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:background="@color/white"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Gathering"
+                android:textSize="24sp"
+                android:textColor="@color/off_black"
+                android:fontFamily="@font/inter_medium" />
+
+            <TextView
+                android:id="@+id/event_details_date_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 4th, 2021 @ 8:30 AM"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_dark_accent"
+                android:fontFamily="@font/inter_medium"/>
+
+            <TextView
+                android:id="@+id/event_details_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silicon Valley, California"
+                android:textSize="16sp"
+                android:textColor="@color/off_black"
+                android:fontFamily="@font/inter_medium"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/event_details_event_description"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_description"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Participants"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_medium"/>
+
+        <ListView
+            android:id="@+id/event_details_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none"
+            android:divider="@null"/>
+
+
+    </LinearLayout>
+</ScrollView>

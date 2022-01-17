@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:text="All Events"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:paddingHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Created and invited events"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_regular"/>
+
+    <ListView
+        android:id="@+id/events_list_view"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_events_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="No Events."
+        android:textSize="24sp"
+        android:textColor="@color/color_dark_accent"
+        android:fontFamily="@font/inter_medium"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circle_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        app:trackColor="@color/color_dark_accent"
+        app:indicatorColor="@color/color_accent"
+        app:trackThickness="6dp"
+        app:indicatorSize="75dp"/>
+
+</RelativeLayout>

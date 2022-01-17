@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_color"
+    android:clipToPadding="false"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText,LabelFor">
+
+    <com.google.android.material.card.MaterialCardView
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/user_profile_image_list_item"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/sample_person_drawin"
+            android:layout_centerVertical="true"
+            android:background="@color/dark_gray"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/user_username_list_item"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/user_profile_image_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="18sp"
+            android:textColor="@color/off_black"
+            android:fontFamily="@font/inter_medium"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Add"
+            android:fontFamily="@font/inter_medium"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
