@@ -8,7 +8,10 @@ Technology day after day becomes more integrated with the life of civilians, in 
 The COVID Event Organizer app is an app that allows people across the 50 states of America to organize gatherings/events according to CDC guidelines. Depending on which state the event is in, the most recent COVID situation in terms of rules will be displayed on the user's screen. And if someone has tested positive for COVID, the users will be notified. 
 
 ## 🔨 How I built it
-I built the app using Android Studio (XML/Java) and Firebase. I used the Cloud Firestore and Cloud Messaging products in order to save data online and send notifications to the users.  
+* UI Design: Figma
+* Database: Firebase Firestore
+* Notification System: Firebase Cloud Messaging
+* Software: Android Studio (XML/Java)
 
 ## 🏆 Challenges I ran into
 Being a 1 man team with not much experience, it was hard to implement all of the features that I wanted to put and I actually wasn't able to implement all of them. Coding this app alone in a small time period also put a big workload on me; I'm not used to hackathons, this is my first one! :) I had to learn a lot of things but I wasn't able to fully learn them being I was also in a rush to complete the app.
