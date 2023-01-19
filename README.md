@@ -1,6 +1,8 @@
 # EventOrganizerApp
 Mobile app for hackathon, made in about 3 days
 
+Hackathon Link: https://devpost.com/software/covid-event-organizer-app
+
 ## 💡 Inspiration
 Technology day after day becomes more integrated with the life of civilians, in various aspects. And now during this time, many people may want/need to organize events but in a safe manner. So instead of calling people left and right, just use the Event Organizer app! It'll take care of the planning for you, all while staying within CDC guidelines and recommended health decisions.
 
